@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <title>FINALS-Hand Cricket</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="image/png" href="wc19.png">
+        <script>
+            alert("Welcome to Hand-Cricket, All You have to do is to choose a number other than what your opponent(CPU) chooses!! Readyfor the challenge?")
+            var mypics=["zero.png", "one.png","two.png","three.png","four.png","six.png"];
+            var playerh;
+            var randomnumber;
+            var score=0;
+            function one()
+            {
+                document.getElementById("human").src=mypics[1];
+                playerh=1;
+                score=1;
+            }
+            function two()
+            {
+                document.getElementById("human").src=mypics[2];
+                playerh=2;
+                score=2;
+            }
+            function three()
+            {
+                document.getElementById("human").src=mypics[3];
+                playerh=3;
+                score=3;
+            }  
+            function four()
+            {
+                document.getElementById("human").src=mypics[4];
+                playerh=4;
+                score=4;
+            } 
+            function six()
+            {
+                document.getElementById("human").src=mypics[5];
+                playerh=5;
+                score=6
+            }  
+            function zero()
+            {
+                document.getElementById("human").src=mypics[0];
+                playerh=0;
+            }         
+           
+            function result()
+            {   
+                randomnumber = Math.floor(Math.random()*mypics.length);
+                document.getElementById("computer").src=mypics[randomnumber];
+                if(playerh==randomnumber)
+                {
+                    alert("Clean Bowled, A poor poor shot");
+                }
+                
+                else if(playerh==0)
+                {
+                    alert("A Solid Defence")
+                }
+                else if(playerh==1)
+                {
+                   alert("Nicely Cut For A Single")
+                }
+                else if(playerh==2)
+                {
+                    alert("Swept Away For A Couple")
+                }
+                else if(playerh==3)
+                {
+                    alert("Swift Running between the Wickets for 3 runs,A Beautiful Leg Glance")
+                }
+                else if(playerh==4)
+                {
+                    alert("A Master Piece!! through the covers for a 4, A Classic Cover Drive")
+                }
+                else if(playerh==5)
+                {
+                    alert("Pulled Away for a 6")
+                }
+               
+            }
+            
+           
+           
+        </script>
+        <style>
+            .player
+            {
+                width: 800px;
+                background-color: rgb(0,0,0,6);
+                margin: auto;
+                color: #ffffff;
+                padding: 10px 0px 10px 0px ;
+                text-align: center;
+                border-radius: 15px 15px 0px  0px;
+            }
+            body
+            {
+                background-image: url(stadiums/lords.jpg);
+                background-position: center;
+                background-size: cover;
+                margin-top: 40px;
+
+            }
+            #human
+            {
+                position: relative;
+                left: 30px;
+            }
+            #computer
+            {
+                position: relative;
+                right: 55px;
+            }
+            #cup
+            {
+                width: 450px;
+                
+            }
+            .home
+            {
+                size: 34px;
+                position: absolute;
+                top: 10px;
+                right: 10%;
+            }
+            .home a
+            {
+                color: white;
+            }
+            
+        </style>
+        <link rel="shortcut icon" type="image/png" href="wc19.png">
+    </head>
+    <body>
+        <div class="home">
+            <a href="main.html">Home</a>
+        </div>
+        <div class="player">
+            <div class="head"><h1>Let's play!!! Choose an action</h1></div><br>
+        <button type="submit" onclick="one()" id="action">1</button>
+        <button type="submit" onclick="two()" id="action">2</button>
+        <button type="submit" onclick="three()" id="action">3</button>
+        <button type="submit" onclick="four()" id="action">4</button>
+        <button type="submit" onclick="six()" id="action">6</button>
+        <button type="submit" onclick="zero()" id="action">0</button>
+
+        <button type="submit" onclick="result()" id="ready">Stance Ready! Execute the shot!!! </button><br>
+        
+        </div>
+        <div>
+            <img src="players/Morgan.png" width="500" height="500" id="human"/>
+            <img src="wc19.png" id="cup">
+            <img src="players/kane.png" width="500" height="500" id="computer"/>
+
+        </div>
+        
+        
+      
+       
+        
+    </body>
+</html>

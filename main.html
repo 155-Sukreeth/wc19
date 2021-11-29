@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CWC 19</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.jss"></script>
+        <link rel="shortcut icon" type="image/png" href="wc19.png">
+    </head>
+    <body>
+        <div class="main">
+            <nav>
+                <div class="logo">
+                    <img src="icc 2.png">
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="fixtures.html">Fixtures</a></li>
+                    
+                        <li><a href="powerplayers.html">Power Players</a></li>
+                        <li><a href="stadiums.html">Stadium Gallery</a></li>
+                        <li><a href="games.html">Mini Games</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="information">
+                <div class="overlay">
+
+                </div>
+                <img src="wc19.png" class="wc19">
+                <div id="circle">
+                                   
+                    <div class="feature one">
+                        <img src="win.png">
+                        <div>
+                            <h1>1 World Cup</h1>
+                            <h3> Only the deserving</h3>
+                        </div>
+                    </div>
+                    <div class="feature two">
+                        <img src="stadium.png">
+                        <div>
+                            <h1>11 Stadiums</h1>
+                            <h3> World Class Venues</h3>
+                        </div>
+                    </div>
+                    <div class="feature three">
+                        <img src="toss.png">
+                        <div>
+                            <h1>48 Matches</h1>
+                            <h3> Entertainment 24 X 7</h3>
+                        </div>
+                    </div>
+                    <div class="feature four">
+                        <img src="teams.png">
+                        <div>
+                            <h1>10 teams</h1>
+                            <h3> Best of The Best</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="controls">
+                <img src="arrow.png" id="up">
+                <h3>World Cup 2019</h3>
+                <img src="arrow.png" id="dwn">
+            </div>
+        </div>
+        <script>
+            var circle= document.getElementById("circle");
+            var up= document.getElementById("up");
+            var dwn= document.getElementById("dwn");
+            var rotateValue=circle.style.transform;
+            var rotateSum;
+
+            up.onclick= function()
+            {
+                rotateSum = rotateValue + "rotate(-90deg)";
+                circle.style.transform= rotateSum;
+                rotateValue= rotateSum;
+            }
+            dwn.onclick= function()
+            {
+                rotateSum = rotateValue + "rotate(90deg)";
+                circle.style.transform= rotateSum;
+                rotateValue= rotateSum;
+            }
+        </script>
+    </body>
+</html>

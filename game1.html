@@ -1,0 +1,273 @@
+<html>
+    <head>
+        <title>
+            Batting Partner- Mini-Game
+        </title>
+        <link rel="shortcut icon" type="image/png" href="wc19.png">
+        <script src="game1.js"></script>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body
+            {
+                background-image: url(stadiums/lords.jpg);
+                background-position: center;
+                background-size: cover;
+                margin-top: 40px;
+
+            }
+            .player
+            {
+                width: 800px;
+                background-color: rgb(0,0,0,6);
+                margin: auto;
+                color: #ffffff;
+                padding: 10px 0px 10px 0px ;
+                text-align: center;
+                border-radius: 15px 15px 0px  0px;
+            }
+            .form
+            {
+                background-color: rgb(0, 0, 0, 0.5);
+                width: 800px;
+                margin: auto;
+            }
+            form{
+                padding: 10px;
+
+            }
+            #name
+            {
+                width: 100%;
+                height: 100px;
+            }
+            .name
+            {
+                margin-left: 25px;
+                margin-top: 30px;
+                width: 125px;
+                color: white;
+                font-size: 18px;
+                font-weight: 700;
+
+            }
+            .fname
+            {
+                position: relative;
+                left: 200px;
+                top: -37px;
+                line-height: 40px;
+                border-radius: 6px;
+                padding: 0 22px;
+                font-size: 16px;
+            }
+            .lname
+            {
+                position: relative;
+                left: 417px;
+                top: -80px;
+                line-height: 40px;
+                border-radius: 6px;
+                padding: 0 22px;
+                font-size: 16px;
+                color: #555;
+            }
+            .flabel
+            {
+                position: relative;
+                color: #e5e5e5;
+                text-transform: capitalize;
+                font-size: 14px;
+                left: 203px;
+                top: -45px;
+            }
+            .llabel
+            {
+                position: relative;
+                color: #e5e5e5;
+                text-transform: capitalize;
+                font-size: 14px;
+                left: 492px;
+                top: -76px;
+            }
+            .jname
+            {
+                position: relative;
+                left: 200px;
+                top: -37px;
+                line-height: 40px;
+                /*width: 532px;*/
+                border-radius: 6px;
+                padding: 0 22px;
+                font-size: 16px;
+                color: #555;
+
+            }
+            .jlabel
+            {
+                position: relative;
+                color: #e5e5e5;
+                text-transform: capitalize;
+                font-size: 14px;
+                left: 203px;
+                top: -30px;
+            }
+            .jnum1
+            {
+                position: relative;
+                left: 485px;
+                top: -85px;
+            }
+            .jnum2
+            {
+                position: relative;
+                left: 485px;
+                top: -85px;
+            }
+            .jnum3
+            {
+                position: relative;
+                left: 485px;
+                top: -85px;
+            }
+            .jnumlab
+            {
+                position: relative;
+                color: #e5e5e5;
+                text-transform: capitalize;
+                font-size: 14px;
+                left: 375px;
+                top: -50px;
+            }
+            .hand
+            {
+                display: inline-block;
+                padding-right: 70px;
+                font-size: 14px;
+                margin-left: 25px;
+                margin-top: 15px;
+                color: white;
+            }
+            button
+            {
+                background-color: #3BAF9F;
+                display: block;
+                margin: 20px 0px opx 20px;
+                position: relative;
+                top: 5px;
+                left: 420px;
+                text-align: center;
+                border-radius: 12px;
+                border: 2px solid #366473;
+                padding: 14px 110px;
+                outline: none;
+                color: white;
+                cursor: pointer;
+                transition: 0.25px;
+            }
+            .blah
+            {
+                color: white;
+                size: 14px;
+            }
+            button:hover
+            {
+                background-color: #5390F5;
+            }
+            .home
+            {
+                size: 34px;
+                position: absolute;
+                top: 10px;
+                right: 10%;
+            }
+            .home a
+            {
+                color: white;
+            }
+        </style>
+        <link rel="shortcut icon" type="image/png" href="wc19.png">
+    </head>
+    <body>
+        <div class="home">
+            <a href="main.html">Home</a>
+        </div>
+       <div class="player"><h1>PLAYER PROFILE</h1></div>
+       <div class="form">
+            <form>
+                <div id="name">
+                    <h2 class="name">Name</h2>
+                    <input class="fname" type="text" name="fname"><br>
+                    <label class="flabel">First Name</label>
+                    <input class="lname" type="text" name="lname"><br>
+                    <label class="llabel">Last Name</label>
+
+                </div>
+                <h2 class="name">Jersey</h2>
+                <input class="jname" type="text" name="jname"><br>
+                <label class="jlabel">Jersey Name</label><br>
+                <select class="jnum1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>0</option>
+                </select>
+                <select class="jnum2">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>0</option>
+                </select>
+                <select class="jnum3">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>0</option>
+                </select>
+                <div class="blah">
+                <label class="jnumlab">Jersey Number</label><br>
+                <div class="name"><h2>Bat Style</h2></div>
+                <label class="hand">Bat Hand</label>
+                <input class="rhand" name="hand" type="radio" id="rh" checked>
+                <span class="check"></span>
+                Right
+                <input class="lhand" name="hand" type="radio" id="lh">
+                <span class="check"></span>
+                Left<br>
+                <label class="hand">Bat Style</label>
+                <input class="rhand" name="style" type="radio" checked id="so">
+                <span class="check"></span>
+                Orthodox
+                <input class="lhand" name="style" type="radio" id="su">
+                <span class="check"></span>
+                Unorthodox<br>
+                <button class="search" type="button"  onclick="main()">Search Batting Partner</button>
+                <button class="search" type="button" onclick="redirect()">Play the FINALS</button>
+                </div>
+                <div class="name">Your Batting Partner:</div>
+            </form>
+            <img src="players/archer.png" id="nonstriker"/>
+       </div>
+        
+    </body>
+</html>
